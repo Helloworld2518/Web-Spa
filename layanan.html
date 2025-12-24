@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan</title>
+    <!-- Favicon -->
+    <link href="assets/img/clients/pijat-logo.jpeg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/isi-tk.css">
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h1 class="sitename">Sayap Massage</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tentang-kami.html">About Us</a></li>
+                <li><a href="layanan.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="berita.html">News</a></li>
+                <li><a href="kontak.html">Contact</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="wa.me/+62895412763345" style="background-color: red;">Hubungi Kami</a>
+
+        </div>
+    </header>
+    <section id="isi-tk">
+        <div id="kiri-tk">
+            <section id="cari-tk">
+                <form>
+                    <h1>Pencarian</h1>
+                    <div class="search-row" style="display:flex; gap:8px; align-items:center;">
+                      <input id="jt-search" type="search" placeholder="Cari berita..." aria-label="Cari berita" style="flex:1;" />
+                      <img src="assets/img/clients/search.svg" alt="search" style="width:28px; height:28px;" />
+                    </div>
+                </form>
+            </section>
+            <section id="calendar-section">
+                <h1>Kalender</h1>
+                <div class="wrapper">
+                    <div class="container-calendar">
+                        <h3 id="monthAndYear"></h3>
+
+                        <div class="button-container-calendar">
+                            <button id="previous" onclick="previous()">&#8249;</button>
+                            <button id="next" onclick="next()">&#8250;</button>
+                        </div>
+
+                        <table class="table-calendar" id="calendar" data-lang="en">
+                            <thead id="thead-month"></thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+
+                        <div class="footer-container-calendar">
+                            <label for="month">Jump To: </label>
+                            <select id="month" onchange="jump()">
+                                <option value=0>Jan</option>
+                                <option value=1>Feb</option>
+                                <option value=2>Mar</option>
+                                <option value=3>Apr</option>
+                                <option value=4>May</option>
+                                <option value=5>Jun</option>
+                                <option value=6>Jul</option>
+                                <option value=7>Aug</option>
+                                <option value=8>Sep</option>
+                                <option value=9>Oct</option>
+                                <option value=10>Nov</option>
+                                <option value=11>Dec</option>
+                            </select>
+                            <select id="year" onchange="jump()"></select>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <div id="kanan-tk">
+            <h1 id="title-cnt">Layanan</h1>
+            <ol>
+                <li><strong>Massage Relaksasi</strong> – membantu mengurangi stres, meningkatkan sirkulasi darah, dan
+                    menyegarkan tubuh.</li>
+                <li><strong>Kusuk Tradisional</strong> – sentuhan khas untuk meredakan pegal, nyeri otot, dan
+                    mengembalikan vitalitas.</li>
+                <li><strong>Urut Badan</strong> – terapi untuk melancarkan peredaran darah dan memulihkan kebugaran.
+                </li>
+                <li><strong>Refleksi</strong> – fokus pada titik-titik refleksi kaki & tangan untuk meningkatkan energi
+                    dan kesehatan organ tubuh</li>
+                <li><strong>Body Scrub / Lulur</strong> – perawatan tubuh dengan pijatan lembut menggunakan lulur untuk
+                    mengangkat sel kulit mati, melembutkan kulit, dan melancarkan peredaran darah.</li>
+                <li><strong>Totok Wajah</strong> – teknik pijat pada titik-titik akupresur di wajah untuk melancarkan
+                    sirkulasi darah, merangsang kolagen, dan membantu relaksasi otot wajah agar tampak segar dan
+                    kencang.</li>
+                <li><strong>Terapi Bekam</strong> – terapi tradisional dengan metode penyedotan menggunakan alat khusus
+                    pada permukaan kulit untuk mengeluarkan toksin, melancarkan peredaran darah, dan meningkatkan daya
+                    tahan tubuh.</li>
+                <li><strong>Kerokan</strong> – teknik tradisional dengan menggosok minyak dan alat khusus di permukaan
+                    kulit untuk mengurangi masuk angin, melancarkan peredaran darah, serta membantu tubuh terasa lebih
+                    ringan dan segar.</li>
+                <li><strong>Relax Stretching</strong> – rangkaian gerakan peregangan ringan yang bertujuan untuk melepas
+                    ketegangan otot, menenangkan pikiran, dan membuat tubuh lebih rileks. Cocok dilakukan pagi hari,
+                    setelah bekerja, atau sebelum tidur.
+                    <ul>
+                        <li><strong>Mengurangi pegal & kaku otot</strong></li>
+                        <li><strong>Melancarkan peredaran darah</strong></li>
+                        <li><strong>Mengurangi stres & kelelahan</strong></li>
+                        <li><strong>Meningkatkan kualitas tidur</strong></li>
+                        <li><strong>Aman untuk segala usia</strong></li>
+                    </ul>
+                </li>
+                <li><strong>Terapi Paz</strong> – PAZ adalah ilmu Pengobatan Akhir Zaman yang dasar pengobatnnya
+                    terinspirasi dari Al Qur'an, yang dirumuskan oleh Ustadz Haris Moejahid, perbaikan sendi Rangka &
+                    tulang belakang.</li>
+                <li><strong>Terapi Kretek²</strong> – Terapi Kretek² dilakukan dengan memberikan tekanan pada sendi
+                    tulang belakang (manipulasi tulang belakang) dengan tangan atau dengan alat khusus. Tekanan yang
+                    diberikan harus terkontrol dengan baik, misalnya cepat-lambat dan kuat-lembut harus sesuai dengan
+                    kebutuhan pasien. Tujuan manipulasi tulang belakang adalah mengembalikan kelenturan sendi yang
+                    berkurang akibat cedera fisik. Pada dasarnya, tujuan terapi kretek² adalah untuk mengendurkan otot
+                    dan menggerakkan persendian dengan baik.</li>
+            </ol>
+
+            <p>✨ Semua layanan dilakukan oleh terapis Muslim dan Muslimah profesional & Bersertifikat dengan standar
+                kebersihan dan kenyamanan terbaik.</p>
+        </div>
+    </section>
+    <footer id="footer" class="footer position-relative dark-background">
+
+        <section id="box-ftr">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254832.60235551122!2d98.5046794577562!3d3.642271471476495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc1c3eb2fd%3A0x23d431c8a6908262!2sMedan%2C%20Medan%20City%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1766392001136!5m2!1sen!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <h6>Khusus dipanggil ke Hotel & Apartemen</h6>
+                <p>Whatsapp : 0895 4127 63345</p>
+                <p>Telephone : 0878 6859 2552</p>
+                <p><strong>Email:</strong> <span>rahmanarif070385@gmail.com</span></p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tentang-kami.html">About Us</a></li>
+                    <li><a href="layanan.html" class="active">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="berita.html">News</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Sayap Medan</strong> <span>All Rights
+                    Reserved</span>
+            </p>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/calendar.js"></script>
+
+</body>

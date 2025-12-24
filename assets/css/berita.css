@@ -1,0 +1,97 @@
+#jt-feed-container {
+  width: 100%;
+}
+
+/* LAYOUT LIST (GAMBAR DI SAMPING) */
+.jt-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  align-items: flex-start; /* Menjaga konten tetap di atas jika teks pendek */
+}
+
+.jt-img-side {
+  flex: 0 0 280px; /* Lebar tetap gambar */
+  height: 170px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.jt-img-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jt-content-side {
+  flex: 1;
+}
+
+.jt-tag {
+  color: #2d7d6f;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+}
+.jt-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d7d6f;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+.jt-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* DETAIL VIEW */
+.jt-detail h1 {
+  color: #2d7d6f;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.jt-meta {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 13px;
+  display: flex;
+  gap: 15px;
+}
+.jt-body {
+  line-height: 1.8;
+  color: #333;
+  font-size: 16px;
+}
+.jt-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 15px 0;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .jt-item {
+    flex-direction: column;
+  }
+  .jt-img-side {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 200px;
+  }
+}

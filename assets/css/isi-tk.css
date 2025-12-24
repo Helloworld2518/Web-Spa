@@ -1,0 +1,155 @@
+#isi-tk{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5% 0 5%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.75rem;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    padding-top: 5%;
+}
+
+#title-cnt{
+    border-bottom: black solid ;
+    padding: 0.1em;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.container-calendar {
+    background: #ffffff;
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* layout columns: kiri = sidebar kalender, kanan = konten */
+#kiri-tk{
+    flex: 0 0 28%;
+    max-width: 28%;
+}
+
+#kanan-tk{
+    flex: 1 1 68%;
+    max-width: 68%;
+    padding-top: 3% ;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+/* friday */
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+@media (min-width: 992px) {
+    /* pada layar lebar, jadikan wrapper sebagai kolom sidebar */
+    .wrapper {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    /* pada layar kecil, tumpuk kolom dan beri jarak lebih kecil */
+    #isi-tk{
+        flex-direction: column-reverse;
+        padding-top: 15%;
+        gap: 1rem;
+    }
+
+    #kiri-tk, #kanan-tk, .wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .button-container-calendar #previous,
+    .button-container-calendar #next {
+        float: none;
+        display: inline-block;
+        margin: 0 6px;
+    }
+}
